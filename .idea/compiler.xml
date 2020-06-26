@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ec-commerce-service" />
+        <module name="ec-commerce-common" />
+        <module name="ec-commerce-business" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ec-commerce-business" target="1.7" />
+      <module name="ec-commerce-common" target="1.8" />
+      <module name="ec-commerce-service" target="1.8" />
+      <module name="parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ec-commerce-business" options="-parameters" />
+      <module name="ec-commerce-common" options="-parameters" />
+      <module name="ec-commerce-service" options="-parameters" />
+      <module name="parent" options="" />
+    </option>
+  </component>
+</project>

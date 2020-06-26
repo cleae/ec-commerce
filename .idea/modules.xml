@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ec-commerce-business/ec-commerce-business.iml" filepath="$PROJECT_DIR$/ec-commerce-business/ec-commerce-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ec-commerce-common/ec-commerce-common.iml" filepath="$PROJECT_DIR$/ec-commerce-common/ec-commerce-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ec-commerce-service/ec-commerce-service.iml" filepath="$PROJECT_DIR$/ec-commerce-service/ec-commerce-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
+    </modules>
+  </component>
+</project>
