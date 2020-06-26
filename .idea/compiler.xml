@@ -12,7 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ec-commerce-business" target="1.7" />
+      <module name="ec-commerce-business" target="1.8" />
       <module name="ec-commerce-common" target="1.8" />
       <module name="ec-commerce-service" target="1.8" />
       <module name="parent" target="1.8" />
