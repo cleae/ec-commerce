@@ -2,3 +2,67 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tl.service.mapper.OrderMapper">
+
+    <resultMap id="OrderUser" type="com.tl.service.domain.Order" >
+        <id property="id" column="id"/>
+        <result property="openid" column="openid"/>
+        <result property="totalFee" column="totalFee"/>
+        <result property="orderId" column="orderId"/>
+        <result property="state" column="state"/>
+        <result property="goodsId" column="goodsId"/>
+        <result property="specsId" column="specsId"/>
+        <result property="address" column="address"/>
+        <result property="consignee" column="consignee"/>
+        <result property="mobile" column="mobile"/>
+        <result property="userIp" column="userIp"/>
+        <!--        其余的字段可以不写，可以自动映射，但关联的键一定要写  -->
+        <result property="userId" column="userId"/>
+        <result property="createtime" column="createtime"/>
+        <result property="updatetime" column="updatetime"/>
+        <!--        <association property="user" javaType="com.tl.domain.User"   column="userId"  resultSet="com.tl.domain.User" foreignColumn="id">-->
+        <association property="user" javaType="com.tl.service.domain.User"   column="userId"  foreignColumn="id">
+
+            <id property="id" column="user_id" />
+            <result property="loginname" column="loginname"/>
+            <result property="pwd" column="pwd"/>
+            <result property="nick" column="nick"/>
+            <result property="avatar" column="avatar"/>
+            <result property="avatarbig" column="avatarbig"/>
+            <result property="ipid" column="ipid"/>
+            <result property="remark" column="remark"/>
+            <result property="status" column="status"/>
+            <result property="createtime" column="user_createtime"/>
+            <result property="updatetime" column="user_updatetime"/>
+        </association>
+    </resultMap>
+
+
+
+    <select id="getOrder"   resultMap="OrderUser">
+        SELECT o.*,
+               u.id as user_id,u.loginname ,u.pwd,u.nick,u.avatar,u.avatarbig,u.ipid,u.remark,u.status
+               ,u.createtime as user_createtime, u.updatetime as user_updatetime
+        FROM tl.order o LEFT JOIN tl.user u on u.id=o.userId limit 3;
+    </select>
+
+
+    <resultMap id="OrderDelay" type="com.tl.service.domain.Order" >
+        <association property="user" column="userId" javaType="com.tl.service.domain.User"  select="com.tl.service.mapper.UserMapper.findById" />
+    </resultMap>
+
+    <!--    mybatis 一对一 延迟加载-->
+    <select id="findOrder" resultMap="OrderDelay">
+        select * from `order` limit 23
+    </select>
+
+
+
+    <select id="findById" resultType="com.tl.service.domain.Order">
+        select * from `order` where userId=#{id}
+    </select>
+
+
+
+
+</mapper>
