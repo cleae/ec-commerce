@@ -11,6 +11,7 @@
 <!--        <result property="username" column="user_name"/>-->
 <!--        <result property="password" column="hashed_password"/>-->
 <!--    </resultMap>-->
+<!--    <cache/>-->
 
     <resultMap id="userResultMap" type="com.tl.service.domain.User">
         <id property="id" column="id" />

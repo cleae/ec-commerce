@@ -12,6 +12,7 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
@@ -22,6 +23,7 @@ import java.sql.SQLException;
 @Configuration
 @MapperScan("com.tl.service.mapper")
 public class DataSourceConfig {
+
     private Logger logger = LoggerFactory.getLogger(DataSourceConfig.class);
 
     @Value("${spring.datasource.url}")
@@ -110,6 +112,14 @@ public class DataSourceConfig {
         return datasource;
     }
 
+
+//    @Bean
+//    public DataSourceTransactionManager dataSourceTransactionManager(
+//            DataSource dataSource) {
+//        DataSourceTransactionManager manager = new DataSourceTransactionManager();
+//        manager.setDataSource(dataSource);
+//        return manager;
+//    }
 
 
 }

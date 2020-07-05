@@ -21,6 +21,21 @@ spring:
     filters: stat # ,wall,log4j # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000 # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
     useGlobalDataSourceStat: true # 合并多个DruidDataSource的监控数据
+  redis:
+    host: 192.168.64.129
+    timeout: 2000
+    port: 6379
+    password: 1313008hardtl
+    sentinel:
+      master: lintan-master
+      nodes: 192.168.64.129:26379,192.168.64.128:26379,192.168.64.130:26379
+    jedis:
+      pool:
+        max-wait: 1000
+        max-idle: 8
+        max-active: 1000
+        time-between-eviction-runs: 30000
+
 mybatis:
   typeAliasesPackage: com.tl.service.domain
   mapperLocations: classpath:mapper/*.xml
@@ -30,3 +45,5 @@ mybatis:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 #  configLocation: classpath:/mybatis-config.xml
+
+redis:

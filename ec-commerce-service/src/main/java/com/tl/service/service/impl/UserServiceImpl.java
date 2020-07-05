@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
      * @param loginName
      * @return
      */
-//    @Transactional
+//
     @Override
     public User findAllByLoginName(String loginName) {
         return userMapper.findAllByLoginName(loginName);

@@ -1,12 +1,13 @@
 package com.tl.service.domain;
 
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * 用户信息
  */
-public class User {
+public class User implements Serializable {
 
   private Integer id;
   private String loginname;

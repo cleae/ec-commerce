@@ -2,123 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19f044e4-ca4a-4ac1-b7f3-3b7c3e286892" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_core_5_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_58.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alipay_sdk_alipay_sdk_java_3_4_27_ALL.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_48.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jai_imageio_jai_imageio_core_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_javase_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_36.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_36.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_16_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/aspectj/LogAspectJ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/aspectj/annotation/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/init/UserFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/AliPayClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/AlipayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/IntercepterConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/WeChatConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller/AlipayController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller/WeChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/intercepter/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/resp/Resp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/resp/RespResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/utils/AliPayUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/utils/CharCodeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/utils/CommonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/utils/HttpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/utils/IpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/utils/JwtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/utils/SendmailUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/utils/VerifyCodeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/utils/VerifyUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/utils/WXPayUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/GoodsSpecs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_unknown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_19.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_unknown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_1_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_unknown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_unknown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_2_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_2_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/redis/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/redis/config/RedisConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ec-commerce-business/target/classes/com/tl/business/App.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ec-commerce-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ec-commerce-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/EcCommerceCommonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/EcCommerceCommonApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/DataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ec-commerce-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ec-commerce-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ec-commerce-service/src/main/resources/mapper/orderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/resources/mapper/orderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec-commerce-service/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ec-commerce-service/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parent/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -141,29 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/EcCommerceCommonApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/DataSourceConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="276">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,8 +65,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/resources/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="67" column="42" lean-forward="true" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+            <state relative-caret-position="506">
+              <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/DataSourceConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-460">
+              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -183,17 +86,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/resources/mapper/orderMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-564">
+            <state relative-caret-position="529">
               <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="40" column="41" lean-forward="true" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="405">
+              <caret line="38" column="55" lean-forward="true" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -202,10 +114,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/service/UserService.java">
+        <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/redis/RedisService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="154">
+              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#633#634#0" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/redis/config/RedisConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="25" column="87" lean-forward="true" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -213,11 +139,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="147">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -228,20 +154,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="212" column="35" lean-forward="true" selection-start-line="212" selection-start-column="35" selection-end-line="212" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1040">
+              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -262,6 +176,7 @@
       <find>UserORder</find>
       <find>UserOrder</find>
       <find>com.tl.domain.User</find>
+      <find>setEnableTransactionSupport</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -273,7 +188,6 @@
         <option value="$PROJECT_DIR$/eccommercebusiness/pom.xml" />
         <option value="$PROJECT_DIR$/ec-commerce-business/pom.xml" />
         <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/aspectj/annotation/Log.java" />
-        <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/OrderController.java" />
         <option value="$PROJECT_DIR$/ec-commerce-service/src/test/java/com/tl/service/EcCommerceServiceApplicationTests.java" />
         <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/init/UserFilter.java" />
         <option value="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/mapper/OrderMapper.java" />
@@ -290,23 +204,28 @@
         <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/intercepter/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/utils/JwtUtils.java" />
         <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/IntercepterConfig.java" />
-        <option value="$PROJECT_DIR$/parent/pom.xml" />
         <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/AlipayClientConfig.java" />
         <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/AliPayClientConfig.java" />
         <option value="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/ec-commerce-common/pom.xml" />
         <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller/AlipayController.java" />
         <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller/WeChatController.java" />
         <option value="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/service/UserService.java" />
-        <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/User.java" />
         <option value="$PROJECT_DIR$/ec-commerce-service/src/main/resources/mapper/orderMapper.xml" />
-        <option value="$PROJECT_DIR$/ec-commerce-service/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/EcCommerceCommonApplication.java" />
-        <option value="$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/User.java" />
+        <option value="$PROJECT_DIR$/ec-commerce-service/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/parent/pom.xml" />
+        <option value="$PROJECT_DIR$/ec-commerce-common/pom.xml" />
+        <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/service/RedisService.java" />
+        <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/redis/config/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/redis/RedisService.java" />
+        <option value="$PROJECT_DIR$/ec-commerce-common/src/main/resources/redis.properties" />
         <option value="$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/DataSourceConfig.java" />
-        <option value="$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/OrderController.java" />
       </list>
     </option>
   </component>
@@ -390,9 +309,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="185" />
-    <option name="y" value="126" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="151" />
+    <option name="y" value="21" />
     <option name="width" value="1680" />
     <option name="height" value="972" />
   </component>
@@ -530,6 +449,37 @@
               <item name="ec-commerce-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eccommercecommon" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ec-commerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ec-commerce-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eccommercecommon" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ec-commerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ec-commerce-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eccommercecommon" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="resp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ec-commerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ec-commerce-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -634,7 +584,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller" />
+    <property name="last_opened_file_path" value="D:/admin_tl/download/shiro-redis-sentinel-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -648,11 +598,11 @@
       <recent name="com.tl.eccommercecommon.web.intercepter" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\programming\ec-commerce\ec-commerce-common\src\main\java\com\tl\eccommercecommon\web\service" />
       <recent name="D:\programming\ec-commerce\ec-commerce-common\src\main\java\com\tl\eccommercecommon\web\controller" />
       <recent name="D:\programming\ec-commerce\ec-commerce-common\src\main\java\com\tl\eccommercecommon" />
       <recent name="D:\programming\ec-commerce\ec-commerce-common\src\main\java\com\tl\eccommercecommon\web\config" />
       <recent name="D:\programming\ec-commerce\ec-commerce-service\src\main\resources\mapper" />
-      <recent name="D:\programming\ec-commerce\ec-commerce-common\src\main\java\com\tl\eccommercecommon\web\resp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -694,15 +644,16 @@
       <updated>1592555421630</updated>
       <workItem from="1592555424345" duration="25926000" />
       <workItem from="1593249019696" duration="26819000" />
-      <workItem from="1593771159337" duration="9751000" />
+      <workItem from="1593771159337" duration="39666000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62496000" />
+    <option name="totallyTimeSpent" value="92411000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.24439701" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -728,7 +679,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32897604" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
-      <window_info active="true" anchor="bottom" x="45" y="315" width="1874" height="477" id="Run Dashboard" order="16" visible="true" weight="0.1503268" />
+      <window_info active="true" anchor="bottom" x="45" y="315" width="1874" height="477" id="Run Dashboard" order="16" visible="true" weight="0.3769063" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -745,25 +696,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/Address.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/RespResult.java" />
-    <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/Order.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/Resp.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="253">
-            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/serice.java" />
     <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/GoodsSpecs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -914,13 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/WeChatConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-574">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/IntercepterConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -945,30 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="68" column="37" lean-forward="true" selection-start-line="68" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1737">
-          <caret line="121" column="33" selection-start-line="121" selection-start-column="33" selection-end-line="121" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller/WeChatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-344">
-          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,37 +911,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1035">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="212" column="35" lean-forward="true" selection-start-line="212" selection-start-column="35" selection-end-line="212" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1057,48 +931,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/resources/mapper/orderMapper.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-564">
-          <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+        <state relative-caret-position="527">
+          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="67" column="42" lean-forward="true" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/EcCommerceCommonApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="1397">
+          <caret line="213" column="57" lean-forward="true" selection-start-line="213" selection-start-column="57" selection-end-line="213" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/DataSourceConfig.java">
+    <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="161">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="122" column="25" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/WeChatConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-commerce-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="127" column="20" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/controller/WeChatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.jar!/org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="74" selection-start-line="41" selection-start-column="74" selection-end-line="41" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.3.1.RELEASE/spring-data-redis-2.3.1.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="810" lean-forward="true" selection-start-line="810" selection-end-line="810" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/redis/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="25" column="87" lean-forward="true" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1107,8 +1015,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/java/com/tl/service/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="147">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/resources/redis.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/config/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-460">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/EcCommerceCommonApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/resources/mapper/orderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-commerce-service/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1040">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="40" column="41" lean-forward="true" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/redis/RedisService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-commerce-common/src/main/java/com/tl/eccommercecommon/web/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="38" column="55" lean-forward="true" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

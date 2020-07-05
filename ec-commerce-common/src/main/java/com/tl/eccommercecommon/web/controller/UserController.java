@@ -210,6 +210,7 @@ public class UserController {
     @GetMapping("/test")
     @ResponseBody
     public User getTest(@RequestParam(value = "loginName", required = true) String loginName){
+        userService.findAllByLoginName(loginName);
         return userService.findAllByLoginName(loginName);
     }
 
