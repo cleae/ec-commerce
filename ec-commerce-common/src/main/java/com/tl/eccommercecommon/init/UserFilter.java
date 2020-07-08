@@ -2,6 +2,8 @@ package com.tl.eccommercecommon.init;
 
 
 import com.tl.eccommercecommon.aspectj.annotation.Log;
+import com.tl.eccommercecommon.web.redis.RedisService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,6 +13,9 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class UserFilter {
+
+    @Autowired
+    RedisService redisService;
 
 
     /**

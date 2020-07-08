@@ -9,6 +9,15 @@ import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
+import com.tl.eccommercecommon.service.CommodityService;
+import com.tl.eccommercecommon.service.OrderService;
+import com.tl.eccommercecommon.service.UserService;
+import com.tl.eccommercecommon.web.config.WeChatConfig;
+import com.tl.eccommercecommon.web.resp.Resp;
+import com.tl.eccommercecommon.web.utils.WXPayUtil;
+import com.tl.service.domain.Goods;
+import com.tl.service.domain.Order;
+
 import org.mybatis.logging.Logger;
 import org.mybatis.logging.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +39,7 @@ import java.util.*;
 @RequestMapping("/order")
 public class WeChatController {
 
-    /*@Autowired
+    @Autowired
     WeChatConfig weChatConfig;
 
 
@@ -44,7 +53,7 @@ public class WeChatController {
     CommodityService commodityService;
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
-    *//**
+    /**
      * 微信统一下单   校验token  生成签名  拼装下单参数，获取codeUrl 生成下单二维码返回
      *
      * @param GoodId
@@ -54,7 +63,7 @@ public class WeChatController {
      * @param mobile
      * @param request
      * @param response
-     *//*
+     */
     @GetMapping("/unify/order")
     public void unify_order(@RequestParam(value = "good_id", required = true) Integer GoodId,
                             @RequestParam(value = "specs_id", required = true) Integer SpecsId,
@@ -89,19 +98,19 @@ public class WeChatController {
         }
 
 
-        *//**
+        /**
          * 统一下单，生成支付参数
-         *//*
+         */
 
 
     }
 
-    *//**
+    /**
      * 微信支付成功回调接口，校验签名，MD5加密方式，保持接口幂等性
      *
      * @param request
      * @param response
-     *//*
+     */
     @PostMapping("/weChat/callback")
     public void weChatCallback(HttpServletRequest request, HttpServletResponse response) throws Exception {
         InputStream inputStream = request.getInputStream();
@@ -120,12 +129,12 @@ public class WeChatController {
         SortedMap<String, String> sortedMap = WXPayUtil.getSortedMap(callbackMap);
         final Gson gson = new Gson();
         System.out.println("weChat callback body:" + gson.toJson(sortedMap));
-        *//**
+        /**
          * 校验签名
          * 统一下单的时候生成的签名 sign 是所需的下单参数按字母排序，再与我们的商户号进行md5进行加密的
          * 同样的微信回调签名sign字段也是以字母排序加上我们的商户key进行md5加密，
          * 我们获取之后以同样的方式拼接加密 再与sign进行equals 防止微信回调接口被他人伪造调用
-         *//*
+         */
         if (WXPayUtil.isCorrectSign(sortedMap, weChatConfig.getKey())) {
 
 
@@ -151,47 +160,48 @@ public class WeChatController {
     }
 
 
-    *//**
+    /**
      * 获取商品
      *
      * @param token
      * @return
-     *//*
+     */
     @GetMapping("/getCommodities")
     @ResponseBody
     public Resp getCommodities(@RequestParam(value = "token", required = true) String token) {
 
-        List<Map<String, Object>> commodities = commodityService.getCommoditiesWithSpec();
+        List<Goods> commodities = commodityService.getCommoditiesWithSpec();
+        System.out.println(JSON.toJSONString(commodities));
         if (null == commodities || commodities.size() == 0)
             return Resp.fail().code(-1).msg("暂无商品");
         return Resp.ok().code(0).data(commodities).msg("查询成功");
 
     }
 
-    *//**
+    /**
      * 获取单个商品
      *
      * @param GoodsId
      * @return
-     *//*
+     */
     @GetMapping("/getCommodity")
     @ResponseBody
     public Resp getCommodity(@RequestParam(value = "goods_id", required = true) int GoodsId) {
 
-        Map<String, Object> commodities = commodityService.getCommodityWithSpec(GoodsId);
+        List<Goods> commodities = commodityService.getCommodityWithSpec(GoodsId);
         if (null == commodities || commodities.size() == 0)
             return Resp.fail().code(-1).msg("暂无商品");
         return Resp.ok().code(0).data(commodities).msg("查询成功");
 
     }
 
-    *//**
+    /**
      * 获取个人订单
      *
      * @param userId
      * @param openid
      * @return
-     *//*
+     */
     @GetMapping("/get/myOrder")
     @ResponseBody
     public Resp getMyOrderMsg(@RequestParam(value = "user_id", required = true) Integer userId,
@@ -202,14 +212,14 @@ public class WeChatController {
         return Resp.ok().code(0).data(orderList).msg("查询成功");
     }
 
-    *//**
+    /**
      * 轮询 用户支付状态
      *
      * @param userId
      * @param GoodId
      * @param specId
      * @return
-     *//*
+     */
     @GetMapping("/get/current_order_msg")
     @ResponseBody
     public Resp getCurrentOrderMsg(@RequestParam(value = "user_id", required = true) Integer userId,
@@ -229,7 +239,7 @@ public class WeChatController {
         if (resultList.size() == 0)
             return Resp.fail().code(-1).msg("暂无订单");
         return Resp.ok().code(0).data(resultList).msg("查询成功");
-    }*/
+    }
 
 
 }

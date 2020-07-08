@@ -1,11 +1,9 @@
-package com.tl.service.service.impl;
+package com.tl.eccommercecommon.service.impl;
 
 import com.tl.service.domain.User;
-import com.tl.service.mapper.OrderMapper;
 import com.tl.service.mapper.UserMapper;
-import com.tl.service.service.UserService;
+import com.tl.eccommercecommon.service.UserService;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -18,14 +16,20 @@ public class UserServiceImpl implements UserService {
     UserMapper userMapper;
 
     @Override
-    public int insert() {
-        return 0;
+    public int insert(User user) {
+        return userMapper.insertUser(user);
     }
 
+
+    /**
+     * 获取用户所有订单
+     * @return
+     */
     @Override
     public List<User> getUserOrder() {
-        return null;
+        return userMapper.getUserOrder();
     }
+
 
     /**
      * 登陆

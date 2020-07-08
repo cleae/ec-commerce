@@ -1,4 +1,4 @@
-package com.tl.service.service;
+package com.tl.eccommercecommon.service;
 
 import com.tl.service.domain.User;
 
@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface UserService {
 
-    int insert();
+    int insert(User user);
 
     List<User> getUserOrder();
 

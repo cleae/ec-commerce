@@ -8,14 +8,14 @@ import java.util.List;
 public interface UserMapper {
 
 
-    void insertUser(User user);
+    int insertUser(User user);
 
     int updateUser(Integer status,Integer id);
 
 
     int deleteUser(Integer id);
 
-    User findAllByLoginName (@Param("loginname") String loginname);
+    User findAllByLoginName (@Param("loginName") String loginname);
 
 
     List<User> findUserBySubQuery(@Param("ids") List<Integer> ids);
@@ -25,4 +25,6 @@ public interface UserMapper {
 
 
     List<User> findAllDelay();
+
+    List<User> getUserOrder();
 }

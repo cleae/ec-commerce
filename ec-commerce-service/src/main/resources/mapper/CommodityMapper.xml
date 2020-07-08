@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tl.service.mapper.CommodityMapper">
+
+
+    <resultMap id="good_spec" type="com.tl.service.domain.Goods">
+        <id property="id" column="id" />
+        <result column="goodsName" property="goodsName"/>
+        <result column="goodsSno" property="goodsSno"/>
+        <result column="description" property="description"/>
+        <result column="unit" property="unit"/>
+        <result column="isSale" property="isSale"/>
+        <result column="goodsImage" property="goodsImage"/>
+        <result column="price" property="price"/>
+        <result column="oldPrice" property="oldPrice"/>
+        <collection property="details" ofType="com.tl.service.domain.GoodsSpecs" column="id" javaType="java.util.ArrayList">
+            <id property="id" column="spec_id"/>
+            <result column="goods_id" property="goodsId"/>
+            <result column="specification" property="specification"/>
+            <result column="spec_price" property="price"/>
+            <result column="stock" property="stock"/>
+            <result column="image" property="image"/>
+        </collection>
+    </resultMap>
+
+<!--    获取商品信息 -->
+    <select id="getGoodSpec" resultMap="good_spec">
+        select goods.id,goods_specs.id as spec_id,
+        goods.goodsName,
+        goods.goodsSno,
+        goods.description,
+        goods.unit,
+        goods.isSale,
+        goods.goodsImage,
+        goods.price,
+        goods.oldPrice,
+        goods_specs.image,
+        goods_specs.goods_id,
+        goods_specs.specification,
+        goods_specs.stock,
+        goods_specs.price as spec_price
+        from goods
+        left join goods_specs on goods.id=goods_specs.id
+        <where>
+            <if test="goods_id != null">
+                and goods.id=goods_id
+            </if>
+        </where>
+        order by goods.id
+    </select>
+
+
+</mapper>

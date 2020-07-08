@@ -3,6 +3,7 @@ package com.tl.eccommercecommon.web;
 
 import com.tl.eccommercecommon.init.UserFilter;
 import com.tl.eccommercecommon.web.redis.RedisService;
+import com.tl.eccommercecommon.web.utils.access.AccessUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +20,14 @@ public class OrderController {
     @Autowired
     UserFilter userFilter;
 
+    @Autowired
+    AccessUtils activeUser;
+
+    /**
+     * Error:java: Annotation processing is not supported for module cycles.
+     * Please ensure that all modules from cycle [ec-commerce-service,ec-commerce-common] are excluded from annotation processing
+     * @return
+     */
     @GetMapping("/hello")
     @ResponseBody
     public String getOrder(){
@@ -36,7 +45,11 @@ public class OrderController {
         System.out.println(offset_value?1:0);
 
 
-        System.out.println(redisService.get("school"));
+        System.out.println(redisService.get("school"));//bind  uncomment
+
+
+        System.out.println(activeUser.activeUser("lintan","lintan2"));
+
 
         return "hello";
     }

@@ -13,6 +13,7 @@ public class GoodsSpecs {
   private Integer id;
   private String image;
 
+
   public String getImage() {
     return image;
   }

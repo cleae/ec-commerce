@@ -1,14 +1,19 @@
 package com.tl.eccommercecommon.web.redis;
 
 import java.io.Serializable;
+import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.connection.RedisConnection;
+import org.springframework.data.redis.connection.RedisStringCommands;
+import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
@@ -41,6 +46,35 @@ public class RedisService {
         }
         return result;
     }
+
+    /**
+     * 统计二进制位数组offset 值为1的个数
+     * @param key
+     * @return
+     */
+    public Long bitCount(String key){
+        return redisTemplate.execute((RedisCallback<Long>) redisConnection -> redisConnection.bitCount(key.getBytes()));
+    }
+
+    /**
+     * 统计用户在给定时间段的活跃
+     * @param var1  AND,OR,XOR,NOT
+     * @param destinationKey 新生成的目标key
+     * @param keys 要执行操作的key
+     * @return
+     */
+    public Long bitOperation(RedisStringCommands.BitOperation var1, String destinationKey, String ... keys ){
+        int length=keys.length;
+        byte [] [] operation_key=new byte[length][];
+        for (int i = 0; i < length; i++) {
+            operation_key[i]=keys[i].getBytes();
+        }
+//        redisTemplate.getConnectionFactory().getConnection()
+        return redisTemplate.execute((RedisCallback<Long>) redisConnection->redisConnection.bitOp(var1,destinationKey.getBytes(),operation_key));
+    }
+
+
+
 
     /**
      * 写入缓存
@@ -167,21 +201,19 @@ public class RedisService {
     /** 
      * 递增 
      * @param key 键 
-     * @param by 要增加几(大于0) 
-     * @return 
-     */  
-    public long incr(String key, long delta){    
-        if(delta<0){  
-            throw new RuntimeException("递增因子必须大于0");  
-        }  
-        return redisTemplate.opsForValue().increment(key, delta);  
-    }  
+     * @return
+     */
+    public long incr(String key, long delta){
+        if(delta<0){
+            return -1;
+        }
+        return redisTemplate.opsForValue().increment(key, delta);
+    }
 
     /** 
      * 递减 
      * @param key 键 
-     * @param by 要减少几(小于0) 
-     * @return 
+     * @return
      */  
     public long decr(String key, long delta){    
         if(delta<0){  
@@ -466,8 +498,7 @@ public class RedisService {
      * 将list放入缓存 
      * @param key 键 
      * @param value 值 
-     * @param time 时间(秒) 
-     * @return 
+     * @return
      */  
     public boolean lSet(String key, Object value) {  
         try {  
@@ -501,8 +532,7 @@ public class RedisService {
      * 将list放入缓存 
      * @param key 键 
      * @param value 值 
-     * @param time 时间(秒) 
-     * @return 
+     * @return
      */  
     public boolean lSet(String key, List<Object> value) {  
         try {  

@@ -1,6 +1,8 @@
 package com.tl.service.domain;
 
 
+import java.util.List;
+
 /**
  * 商品表
  */
@@ -15,6 +17,17 @@ public class Goods {
   private String goodsImage;
   private Double price;
   private Double oldPrice;
+
+  private List<GoodsSpecs> details;
+
+
+  public List<GoodsSpecs> getDetails() {
+    return details;
+  }
+
+  public void setDetails(List<GoodsSpecs> details) {
+    this.details = details;
+  }
 
   public Double getPrice() {
     return price;

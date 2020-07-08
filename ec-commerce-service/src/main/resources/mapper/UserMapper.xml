@@ -51,7 +51,8 @@
                ,o.createtime as order_createtime, o.updatetime as order_updatetime
         FROM tl.user u LEFT JOIN tl.order o on u.id=o.userId;
     </select>
-    
+
+
     <sql id="select_user">
         select * from User
     </sql>
@@ -65,8 +66,8 @@
     <select id="findAllByLoginName" resultType="user"  >
         select * from User
         <where>
-            <if test="loginname!= null">
-                and loginname=#{loginname}
+            <if test="loginName!= null">
+                and loginname=#{loginName}
             </if>
         </where>
 

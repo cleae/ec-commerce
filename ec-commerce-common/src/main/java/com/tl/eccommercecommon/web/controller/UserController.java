@@ -1,13 +1,14 @@
 package com.tl.eccommercecommon.web.controller;
 
 import cn.hutool.core.util.StrUtil;
+import com.tl.eccommercecommon.web.resp.Resp;
+import com.tl.eccommercecommon.web.utils.*;
 import com.tl.service.domain.User;
-import com.tl.service.service.UserService;
+import com.tl.eccommercecommon.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
@@ -20,14 +21,14 @@ import java.util.regex.Pattern;
 @RequestMapping("/user_login")
 public class UserController {
 
-   /* @Autowired
+    @Autowired
     UserService userService;
 
-    *//**
+    /**
      * 用户登入，验证，生成token
      *
      * @param body
-     *//*
+     */
     @PostMapping("/login")
     @ResponseBody
     public Resp Login(@RequestBody Map<String, Object> body, HttpServletRequest request) {
@@ -38,24 +39,24 @@ public class UserController {
         if ("null".equals(loginName) || "null".equals(pwd) || "null".equals(imageCode))
             return Resp.fail().code(-1).msg("参数错误");
 
-        User user = userService.getUserByLoginPhone(loginName);
+        User user = userService.findAllByLoginName(loginName);
         if (null == user) return Resp.fail().code(-1).msg("用户不存在");
-        *//**
+        /**
          * Access to XMLHttpRequest at 'localhost:8089/ser_login/login' from origin 'http://localhost' has been blocked by
          * CORS policy: Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https.
          *
          * Credentials
-         *//*
+         */
         return _Login(loginName, pwd, imageCode, user, request);
 
     }
 
-    *//**
+    /**
      * 获取图片验证码
      *
      * @param request
      * @return
-     *//*
+     */
     @GetMapping("/image_code")
     @ResponseBody
     public byte[] getImageCode(HttpServletRequest request) {
@@ -71,7 +72,7 @@ public class UserController {
         return new byte[0];
     }
 
-    *//**
+    /**
      * 登陆逻辑
      *
      * @param loginName
@@ -79,7 +80,7 @@ public class UserController {
      * @param imageCode 前端图形验证码
      * @param request
      * @return
-     *//*
+     */
     public static Resp _Login(String loginName, String Base64pwd, String imageCode, User user, HttpServletRequest request) {
         HttpSession session = request.getSession();
         System.out.println("login sessionId :" + session.getId());
@@ -95,9 +96,9 @@ public class UserController {
         String password = CharCodeUtils.decode(user.getPwd());
         System.out.println("password:" + password);
         if (Base64pwd.equals(password)) {
-            *//**
+            /**
              * 生成token
-             *//*
+             */
             String token = JwtUtils.geneJsonWebToken(user);
             int user_id=user.getId();
             Map<String,Object> identity=new HashMap<>(3);
@@ -109,11 +110,11 @@ public class UserController {
         return Resp.fail().code(-1).msg("密码错误");
     }
 
-    *//**
+    /**
      * 用户登入，验证，生成token
      *
      * @param body
-     *//*
+     */
     @PostMapping("/register")
     @ResponseBody
     public Resp register(@RequestBody Map<String, Object> body, HttpServletRequest request) {
@@ -131,14 +132,14 @@ public class UserController {
             if (!mailCode.trim().toLowerCase().equals(session_mailCode.toLowerCase()))
                 return Resp.fail().code(-1).msg("验证码错误");
 
-            User user = userService.getUserByLoginPhone(loginName);
+            User user = userService.findAllByLoginName(loginName);
             if (null != user) return Resp.fail().code(-1).msg("用户已存在");
 
 //            String useIp = IpUtils.getIpAddr(request);
             String useIp = "127.0.0.1";//测试
-            *//**
+            /**
              * INSERT INTO `tl`.`user` (`loginPhone`, `pwd`, `nick`, `avatar`, `ipid`, `remark`, `status`)" +
-             *//*
+             */
             User newuser = new User();
             newuser.setLoginname(loginName);
             newuser.setPwd(CharCodeUtils.encode(pwd));
@@ -148,7 +149,7 @@ public class UserController {
             newuser.setRemark("");
             newuser.setAvatar("http://lintan123.cn/image/login.jpg");
 
-            int save = userService.save(newuser);
+            int save = userService.insert(newuser);
 
             if (save == 1) return Resp.ok().code(0).msg("注册成功");
             return Resp.ok().code(-1).msg("注册失败");
@@ -165,12 +166,12 @@ public class UserController {
 
     }
 
-    *//**
+    /**
      * 注册发送验证码给用户邮箱
      *
      * @param user_mail
      * @return
-     *//*
+     */
     @GetMapping("/get/mailCode")
     @ResponseBody
     public Resp getMailCode(@RequestParam(value = "user_mail", required = true) String user_mail, HttpServletRequest request) {
@@ -186,9 +187,9 @@ public class UserController {
                 StringBuilder stringBuilder = new StringBuilder();
                 stringBuilder.append("【在线支付】在线支付网网验证码:").append(code).append("（20分钟内有效，如非本人操作，请忽略）");
                 SendmailUtil.sendEmil465(user_mail, "欢迎关注美美哒", stringBuilder.toString());
-                *//**
+                /**
                  * 存储验证码，后期整合redis 存储在redis 中
-                 *//*
+                 */
                 HttpSession session = request.getSession(true);
                 session.setAttribute("mailCode", code);
                 session.setMaxInactiveInterval(3600);//一小时
@@ -201,17 +202,7 @@ public class UserController {
             return Resp.fail().code(-1).msg("邮箱格式错误");
 
 
-    }*/
-
-    @Autowired
-    UserService userService;
-
-
-    @GetMapping("/test")
-    @ResponseBody
-    public User getTest(@RequestParam(value = "loginName", required = true) String loginName){
-        userService.findAllByLoginName(loginName);
-        return userService.findAllByLoginName(loginName);
     }
+
 
 }
