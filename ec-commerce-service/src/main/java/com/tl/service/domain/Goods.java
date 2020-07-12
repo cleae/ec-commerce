@@ -1,12 +1,15 @@
 package com.tl.service.domain;
 
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * 商品表
  */
-public class Goods {
+public class Goods  implements Serializable {
+
+  private static final long serialVersionUID = -939578640083323583L;
 
   private Integer id;
   private String goodsName;

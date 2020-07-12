@@ -42,10 +42,10 @@
         goods_specs.stock,
         goods_specs.price as spec_price
         from goods
-        left join goods_specs on goods.id=goods_specs.id
+        left join goods_specs on goods.id=goods_specs.goods_id
         <where>
             <if test="goods_id != null">
-                and goods.id=goods_id
+                and goods.id=#{goods_id}
             </if>
         </where>
         order by goods.id

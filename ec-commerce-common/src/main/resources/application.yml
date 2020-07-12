@@ -22,13 +22,15 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000 # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
     useGlobalDataSourceStat: true # 合并多个DruidDataSource的监控数据
   redis:
-    host: 192.168.64.129
+#    host: 192.168.64.129  #测试
+    host: 172.16.215.49  #生产
     timeout: 2000
     port: 6379
     password: 1313008hardtl
     sentinel:
       master: lintan-master
-      nodes: 192.168.64.129:26379,192.168.64.128:26379,192.168.64.130:26379
+      nodes: 172.16.215.49:26379,172.16.70.232:26379,172.16.215.50:26379   #生产
+#      nodes: 192.168.64.129:26379,192.168.64.128:26379,192.168.64.130:26379  #测试
     jedis:
       pool:
         max-wait: 1000

@@ -1,10 +1,15 @@
 package com.tl.service.domain;
 
 
+import java.io.Serializable;
+
 /**
  * 用户收获地址
  */
-public class  Address {
+public class  Address  implements Serializable {
+
+  private static final long serialVersionUID = -6758857815294561037L;
+
 
   private Integer id;
   private Integer idDefault;

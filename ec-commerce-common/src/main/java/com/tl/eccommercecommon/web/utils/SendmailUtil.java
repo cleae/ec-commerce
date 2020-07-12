@@ -108,7 +108,7 @@ public class SendmailUtil {
             final String smtpHost="smtp.qq.com";
             final String smtpPort="465";
             final String username = "320740231@qq.com";
-            final String password = "glleiwndxgcecaae";
+            final String password = "uzwujmmwvugebjfc";
 
 
             Security.addProvider(new com.sun.net.ssl.internal.ssl.Provider());

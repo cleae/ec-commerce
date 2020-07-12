@@ -1,11 +1,14 @@
 package com.tl.service.domain;
 
 
+import java.io.Serializable;
+
 /**
  * 用户订单信息
  */
-public class Order {
+public class Order  implements Serializable {
 
+  private static final long serialVersionUID = 5378528314804342971L;
   private Integer id;
   private String openid;
   private Integer totalFee;

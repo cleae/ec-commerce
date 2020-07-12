@@ -31,7 +31,7 @@ public class OrderController {
     @GetMapping("/hello")
     @ResponseBody
     public String getOrder(){
-        userFilter.addIpBlankList("43.232.232.120");
+        userFilter.addIpBlankList("43.232.232.120",12);
 
         redisService.setBit("lintan",1,true);
 
@@ -44,8 +44,8 @@ public class OrderController {
 
         System.out.println(offset_value?1:0);
 
-
-        System.out.println(redisService.get("school"));//bind  uncomment
+        redisService.set("school3","湖南大学");
+        System.out.println(">>>>>>>>>>>>>>>>>>>>"+redisService.get("school3"));//bind  uncomment
 
 
         System.out.println(activeUser.activeUser("lintan","lintan2"));

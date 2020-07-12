@@ -158,7 +158,7 @@ public class RedisService {
      */  
     public Object get(String key){  
         return key==null?null:redisTemplate.opsForValue().get(key);  
-    }  
+    }
 
     /** 
      * 普通缓存放入 

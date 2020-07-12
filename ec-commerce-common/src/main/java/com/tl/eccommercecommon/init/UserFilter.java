@@ -23,7 +23,7 @@ public class UserFilter {
      * @param ip
      */
     @Log
-    public void addIpBlankList(String ip){
+    public void addIpBlankList(String ip ,int count){
 
         System.out.println("拉黑名单。。。"+ip);
     }

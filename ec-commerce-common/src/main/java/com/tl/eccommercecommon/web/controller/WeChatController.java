@@ -170,7 +170,7 @@ public class WeChatController {
     @ResponseBody
     public Resp getCommodities(@RequestParam(value = "token", required = true) String token) {
 
-        List<Goods> commodities = commodityService.getCommoditiesWithSpec();
+        List<Goods> commodities = commodityService.getCommoditiesWithSpec("all");
         System.out.println(JSON.toJSONString(commodities));
         if (null == commodities || commodities.size() == 0)
             return Resp.fail().code(-1).msg("暂无商品");
@@ -187,7 +187,6 @@ public class WeChatController {
     @GetMapping("/getCommodity")
     @ResponseBody
     public Resp getCommodity(@RequestParam(value = "goods_id", required = true) int GoodsId) {
-
         List<Goods> commodities = commodityService.getCommodityWithSpec(GoodsId);
         if (null == commodities || commodities.size() == 0)
             return Resp.fail().code(-1).msg("暂无商品");

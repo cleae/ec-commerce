@@ -4,6 +4,8 @@ package com.tl.eccommercecommon.aspectj;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 
@@ -17,6 +19,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class LogAspectJ {
 
+
+    private static Logger logger= LoggerFactory.getLogger(LogAspectJ.class);
+
+
     /**
      * 切点，匹配使用了Log注解的方法
      */
@@ -29,8 +35,11 @@ public class LogAspectJ {
      * 前置通知，方法执行前，记录方法执行前状态
      * @param joinPoint
      */
-    @Before(value = "pointcut()")
-    public void beforeExecute(JoinPoint joinPoint){
+    @Before(value = "pointcut() &&args(param,count)")
+    public void beforeExecute(JoinPoint joinPoint ,String param,int count){
+        System.out.println("黑名单ip:"+param +"attack times" + count);
+        logger.info(joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
+
         System.out.println("before....");
     }
 
@@ -60,6 +69,9 @@ public class LogAspectJ {
     @AfterThrowing(pointcut = "pointcut()",throwing = "throwable")
     public void afterThrower(Throwable throwable){
 
+        logger.error(throwable.toString());
     }
+
+
 
 }

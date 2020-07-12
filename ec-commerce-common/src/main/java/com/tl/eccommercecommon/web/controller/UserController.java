@@ -39,6 +39,9 @@ public class UserController {
         if ("null".equals(loginName) || "null".equals(pwd) || "null".equals(imageCode))
             return Resp.fail().code(-1).msg("参数错误");
 
+
+        System.out.println(">>>>>>>>>>>"+userService.findAllByLoginName(loginName) +"loginname:"+loginName);
+
         User user = userService.findAllByLoginName(loginName);
         if (null == user) return Resp.fail().code(-1).msg("用户不存在");
         /**
@@ -135,8 +138,8 @@ public class UserController {
             User user = userService.findAllByLoginName(loginName);
             if (null != user) return Resp.fail().code(-1).msg("用户已存在");
 
-//            String useIp = IpUtils.getIpAddr(request);
-            String useIp = "127.0.0.1";//测试
+            String useIp = IpUtils.getIpAddr(request);
+//            String useIp = "127.0.0.1";//测试
             /**
              * INSERT INTO `tl`.`user` (`loginPhone`, `pwd`, `nick`, `avatar`, `ipid`, `remark`, `status`)" +
              */

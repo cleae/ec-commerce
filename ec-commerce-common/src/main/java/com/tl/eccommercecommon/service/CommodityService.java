@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface CommodityService {
 
-    public List<Goods> getCommoditiesWithSpec();
+    public List<Goods> getCommoditiesWithSpec(String type);
     public List<Goods>getCommodityWithSpec(int goods_id);
 
 
